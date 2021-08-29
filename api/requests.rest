@@ -1,0 +1,52 @@
+GET http://localhost:8080/exercise/getAllExercise/
+
+###
+POST http://localhost:8080/exercise/makeNewExercise/
+Content-Type: application/json
+
+{
+    "Name": "New Test",
+    "Reps": 2,
+    "Sets": 3,
+    "workoutID": "6116c4e9f80a74b748266984"
+}
+
+###
+DELETE http://localhost:8080/exercise/deleteExercise/6122ba828903ae9b58fe4247/
+
+###
+DELETE http://localhost:8080/exercise/deleteAllExercise/
+
+###
+PUT http://localhost:8080/exercise/updateExercise/6116a90c15854dda0c5dd912/
+
+
+
+
+
+
+
+###
+GET http://localhost:8080/workout/getAllWorkout/
+
+###
+POST http://localhost:8080/workout/makeNewWorkout/
+Content-Type: application/json
+
+{
+    "Name": "Chest Circuit"
+}
+
+###
+DELETE http://localhost:8080/workout/deleteWorkout/6116c2ed117fbbf0688851b3
+
+###
+DELETE http://localhost:8080/workout/deleteAllWorkout/
+
+###
+PUT http://localhost:8080/workout/updateWorkout/6116c323117fbbf0688851bf/
+Content-Type: application/json
+
+{
+    "Name": "Leg Circuit"
+}
